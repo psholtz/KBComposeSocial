@@ -5,7 +5,7 @@ KBComposeSocial
 
 KBComposeSocial provides custom iOS-style dialog boxes for posting to Facebook and Twitter.
 
-The SDK can be configured to capture any of our different media types:
+The SDK can be configured to capture any of four different media types:
 
 <ul>
 <li>Text only</li>
