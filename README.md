@@ -1,4 +1,95 @@
 KBComposeSocial
 ===============
 
-Custom iOS-style dialog boxes for posting to Facebook and Twitter.
+<img src="http://farm3.staticflickr.com/2865/12026010826_17db305edc_n.jpg" /> <img src="http://farm6.staticflickr.com/5542/12025580854_4aa172efb6_n.jpg" />
+<img src="http://farm6.staticflickr.com/5492/12025528914_97b1b11047_n.jpg" /> <img src="http://farm8.staticflickr.com/7365/12026184016_55f5dce081_n.jpg" />
+<img src="http://farm4.staticflickr.com/3767/12026010476_6d1d6e2f70_n.jpg" /> <img src="http://farm6.staticflickr.com/5511/12025342805_1c82f71931_n.jpg" />
+
+KBComposeSocial provides custom iOS-style dialog boxes for posting to Facebook and Twitter.
+
+The SDK can be configured to capture any of our different media types:
+
+<ul>
+<li>Text only</li>
+<li>Text and an image array</li>
+<li>Text and a URL array</li>
+<li>Text, an image array and a URL array</li>
+</ul>
+
+A delegate protocol, with two optional callbacks, is provided:
+
+<pre>
+@protocol KBComposeViewControllerDelegate <NSObject>
+
+@optional
+- (void)composeViewControllerDidPressCancel:(id)sender;
+- (void)composeViewControllerDidPressPost:(id)sender;
+
+@end
+</pre>
+
+Clients using the SDK should implement and use the <code>composeViewControllerDidPressPost:</code> API to link with the Facebook and/or Twitter Social SDK implementation of their choice.
+
+Important Note
+-------------- 
+
+<b><span style="color:#cc0101;"">THIS SOFTWARE DOES NOT ACTUALLY POST TO FACEBOOK OR TWITTER!</span></b>
+
+Rather, it offers user interface controls you can use to capture text, images and urls from your users.
+
+Clients wishing to forward collection information onto the social networks must link with the Facebook and/or Twitter Social SDK implementation of their choice in the <code>composeViewControllerDidPressPost:</code> API.
+
+Example Usage 
+------------- 
+
+You can present a Facebook dialog box using code similar to the following:
+
+<pre>
+KBComposeViewController *comp = [KBComposeViewController composeViewControllerForServiceType:KBServiceTypeFacebook];
+[comp setInitialText:@"Hello, Facebook!"];
+[comp setDelegate:self];
+[self displayViewController:comp];
+</pre>
+
+Running this code would cause the user to be presented with a dialog box similar to the following:
+
+<img src="http://farm4.staticflickr.com/3828/12024234055_3785c07817.jpg" />
+
+To respond to the input entered by the user, you would implement the <code>composeViewControllerDidPressPost:</code> API as follows:
+
+<pre>
+- (void)composeViewControllerDidPressPost:(id)sender {
+    KBComposeViewController *controller = (KBComposeViewController*)sender;
+    NSLog(@"++ This is text: %@", controller.text);
+    NSLog(@"++ This is image array: %@", controller.images);
+    NSLog(@"++ This is url array: %@", controller.urls);
+    NSLog(@"++ This is number of attachments: %d", controller.attachmentsCount);
+
+    // TODO: Extract text, images and urls, and post to Facebook/Twitter using your SDK
+}
+</pre>
+
+This code will be invoked when the user presses the <code>Post</code> button, which is the desired behavior.
+
+Support
+------- 
+
+KBComposeSocial is designed to run on all iOS devices (iPhone4, iPhone5 and iPad) and on all iOS versions from 4.3 and up.
+
+KBComposeSocial is designed to be used on ARC-enabled projects.
+
+KBComposeSocial requires linking with the QuartzCore framework.
+
+License
+------- 
+
+This code is distributed under the terms and conditions of the MIT license.
+
+Change Log
+---------- 
+
+<b>Version 1.0</b> @ January 18, 2014.
+
+<ul>
+<li>Initial Release</li>
+</ul>
