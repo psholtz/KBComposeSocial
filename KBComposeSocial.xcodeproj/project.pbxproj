@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86031B321751B5AF00F6C561 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 86031B301751B5AF00F6C561 /* facebook.png */; };
+		86031B331751B5AF00F6C561 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86031B311751B5AF00F6C561 /* facebook@2x.png */; };
+		86031B361751B5B800F6C561 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 86031B341751B5B800F6C561 /* twitter.png */; };
+		86031B371751B5B800F6C561 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86031B351751B5B800F6C561 /* twitter@2x.png */; };
+		860F520B174C51E40059566C /* KBComposeTwitterSendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F5209174C51E40059566C /* KBComposeTwitterSendButton.png */; };
+		860F520C174C51E40059566C /* KBComposeTwitterSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520A174C51E40059566C /* KBComposeTwitterSendButton@2x.png */; };
+		860F520F174C52B90059566C /* KBComposeTwitterCancelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520D174C52B90059566C /* KBComposeTwitterCancelButton.png */; };
+		860F5210174C52B90059566C /* KBComposeTwitterCancelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520E174C52B90059566C /* KBComposeTwitterCancelButton@2x.png */; };
+		863BE7AB1745BB0000576FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AA1745BB0000576FB6 /* UIKit.framework */; };
+		863BE7AD1745BB0000576FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AC1745BB0000576FB6 /* Foundation.framework */; };
+		863BE7AF1745BB0000576FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AE1745BB0000576FB6 /* CoreGraphics.framework */; };
+		863BE7B51745BB0000576FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7B31745BB0000576FB6 /* InfoPlist.strings */; };
+		863BE7B71745BB0000576FB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7B61745BB0000576FB6 /* main.m */; };
+		863BE7BB1745BB0000576FB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7BA1745BB0000576FB6 /* AppDelegate.m */; };
+		863BE7BD1745BB0000576FB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7BC1745BB0000576FB6 /* Default.png */; };
+		863BE7BF1745BB0000576FB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7BE1745BB0000576FB6 /* Default@2x.png */; };
+		863BE7C11745BB0000576FB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7C01745BB0000576FB6 /* Default-568h@2x.png */; };
+		863BE7C41745BB0000576FB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7C31745BB0000576FB6 /* ViewController.m */; };
+		863BE7C71745BB0000576FB6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7C51745BB0000576FB6 /* ViewController.xib */; };
+		863BE7D81745BB1B00576FB6 /* KBComposeCardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D01745BB1B00576FB6 /* KBComposeCardBackground.png */; };
+		863BE7D91745BB1B00576FB6 /* KBComposeCardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D11745BB1B00576FB6 /* KBComposeCardBackground@2x.png */; };
+		863BE7DA1745BB1B00576FB6 /* KBComposeCardHeaderLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D21745BB1B00576FB6 /* KBComposeCardHeaderLine.png */; };
+		863BE7DB1745BB1B00576FB6 /* KBComposeCardHeaderLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D31745BB1B00576FB6 /* KBComposeCardHeaderLine@2x.png */; };
+		863BE7DC1745BB1B00576FB6 /* KBComposeFacebookSendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D41745BB1B00576FB6 /* KBComposeFacebookSendButton.png */; };
+		863BE7DD1745BB1B00576FB6 /* KBComposeFacebookSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D51745BB1B00576FB6 /* KBComposeFacebookSendButton@2x.png */; };
+		863BE7DE1745BB1B00576FB6 /* KBComposeFacebookNavigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D61745BB1B00576FB6 /* KBComposeFacebookNavigationBar.png */; };
+		863BE7DF1745BB1B00576FB6 /* KBComposeFacebookNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE7D71745BB1B00576FB6 /* KBComposeFacebookNavigationBar@2x.png */; };
+		863BE7E61745D55400576FB6 /* UIImage+Support.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7E51745D55400576FB6 /* UIImage+Support.m */; };
+		863BE7E91745D66900576FB6 /* NSString+Support.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7E81745D66900576FB6 /* NSString+Support.m */; };
+		863BE7F61745D89C00576FB6 /* KBComposeTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7F51745D89C00576FB6 /* KBComposeTwitterViewController.m */; };
+		863BE7FA1745D8A300576FB6 /* KBComposeFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863BE7F91745D8A300576FB6 /* KBComposeFacebookViewController.m */; };
+		863BE8041745F01600576FB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE8031745F01600576FB6 /* QuartzCore.framework */; };
+		863BE80A174695B400576FB6 /* KBComposeAttachmentFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE808174695B300576FB6 /* KBComposeAttachmentFrame.png */; };
+		863BE80B174695B400576FB6 /* KBComposeAttachmentFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE809174695B300576FB6 /* KBComposeAttachmentFrame@2x.png */; };
+		863BE80E17469A3000576FB6 /* KBComposePaperClip.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE80C17469A2D00576FB6 /* KBComposePaperClip.png */; };
+		863BE80F17469A3000576FB6 /* KBComposePaperClip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BE80D17469A2F00576FB6 /* KBComposePaperClip@2x.png */; };
+		863BE8121746E49A00576FB6 /* Saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 863BE8111746E49A00576FB6 /* Saturn.jpg */; };
+		863BE8141746FD9500576FB6 /* Sunset.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 863BE8131746FD9500576FB6 /* Sunset.jpg */; };
+		8655956B1747159100E7F603 /* KBComposeURLAttachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 865595691747159100E7F603 /* KBComposeURLAttachment.png */; };
+		8655956C1747159100E7F603 /* KBComposeURLAttachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8655956A1747159100E7F603 /* KBComposeURLAttachment@2x.png */; };
+		86951C4F174D6584000B95A8 /* KBComposeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86951C4C174D6584000B95A8 /* KBComposeViewController_iPad.xib */; };
+		86951C50174D6584000B95A8 /* KBComposeViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86951C4D174D6584000B95A8 /* KBComposeViewController_iPhone4.xib */; };
+		86951C51174D6584000B95A8 /* KBComposeViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86951C4E174D6584000B95A8 /* KBComposeViewController_iPhone5.xib */; };
+		86951C5F174D8550000B95A8 /* KBComposeRuledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86951C58174D8550000B95A8 /* KBComposeRuledView.m */; };
+		86951C60174D8550000B95A8 /* KBComposeSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86951C5A174D8550000B95A8 /* KBComposeSheetView.m */; };
+		86951C61174D8550000B95A8 /* KBComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86951C5C174D8550000B95A8 /* KBComposeTextView.m */; };
+		86951C62174D8550000B95A8 /* KBComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86951C5E174D8550000B95A8 /* KBComposeViewController.m */; };
+		86A31F661751AA750084C057 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A31F621751AA750084C057 /* Icon-72.png */; };
+		86A31F671751AA750084C057 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A31F631751AA750084C057 /* Icon-72@2x.png */; };
+		86A31F681751AA750084C057 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A31F641751AA750084C057 /* Icon.png */; };
+		86A31F691751AA750084C057 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A31F651751AA750084C057 /* Icon@2x.png */; };
+		86D339DD174C5B1800691CA0 /* KBComposeTwitterNavigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D339DB174C5B1800691CA0 /* KBComposeTwitterNavigationBar.png */; };
+		86D339DE174C5B1800691CA0 /* KBComposeTwitterNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D339DC174C5B1800691CA0 /* KBComposeTwitterNavigationBar@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86031B301751B5AF00F6C561 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Samples/facebook.png; sourceTree = "<group>"; };
+		86031B311751B5AF00F6C561 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "Samples/facebook@2x.png"; sourceTree = "<group>"; };
+		86031B341751B5B800F6C561 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Samples/twitter.png; sourceTree = "<group>"; };
+		86031B351751B5B800F6C561 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "Samples/twitter@2x.png"; sourceTree = "<group>"; };
+		860F5209174C51E40059566C /* KBComposeTwitterSendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeTwitterSendButton.png; sourceTree = "<group>"; };
+		860F520A174C51E40059566C /* KBComposeTwitterSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeTwitterSendButton@2x.png"; sourceTree = "<group>"; };
+		860F520D174C52B90059566C /* KBComposeTwitterCancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeTwitterCancelButton.png; sourceTree = "<group>"; };
+		860F520E174C52B90059566C /* KBComposeTwitterCancelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeTwitterCancelButton@2x.png"; sourceTree = "<group>"; };
+		863BE7A71745BB0000576FB6 /* KBComposeSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBComposeSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		863BE7AA1745BB0000576FB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		863BE7AC1745BB0000576FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		863BE7AE1745BB0000576FB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		863BE7B21745BB0000576FB6 /* KBComposeSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KBComposeSocial-Info.plist"; sourceTree = "<group>"; };
+		863BE7B41745BB0000576FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		863BE7B61745BB0000576FB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		863BE7B81745BB0000576FB6 /* KBComposeSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KBComposeSocial-Prefix.pch"; sourceTree = "<group>"; };
+		863BE7B91745BB0000576FB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		863BE7BA1745BB0000576FB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		863BE7BC1745BB0000576FB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		863BE7BE1745BB0000576FB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		863BE7C01745BB0000576FB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		863BE7C21745BB0000576FB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		863BE7C31745BB0000576FB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		863BE7C61745BB0000576FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		863BE7D01745BB1B00576FB6 /* KBComposeCardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeCardBackground.png; sourceTree = "<group>"; };
+		863BE7D11745BB1B00576FB6 /* KBComposeCardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeCardBackground@2x.png"; sourceTree = "<group>"; };
+		863BE7D21745BB1B00576FB6 /* KBComposeCardHeaderLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeCardHeaderLine.png; sourceTree = "<group>"; };
+		863BE7D31745BB1B00576FB6 /* KBComposeCardHeaderLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeCardHeaderLine@2x.png"; sourceTree = "<group>"; };
+		863BE7D41745BB1B00576FB6 /* KBComposeFacebookSendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeFacebookSendButton.png; sourceTree = "<group>"; };
+		863BE7D51745BB1B00576FB6 /* KBComposeFacebookSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeFacebookSendButton@2x.png"; sourceTree = "<group>"; };
+		863BE7D61745BB1B00576FB6 /* KBComposeFacebookNavigationBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeFacebookNavigationBar.png; sourceTree = "<group>"; };
+		863BE7D71745BB1B00576FB6 /* KBComposeFacebookNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeFacebookNavigationBar@2x.png"; sourceTree = "<group>"; };
+		863BE7E41745D55400576FB6 /* UIImage+Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Support.h"; sourceTree = "<group>"; };
+		863BE7E51745D55400576FB6 /* UIImage+Support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Support.m"; sourceTree = "<group>"; };
+		863BE7E71745D66900576FB6 /* NSString+Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Support.h"; sourceTree = "<group>"; };
+		863BE7E81745D66900576FB6 /* NSString+Support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Support.m"; sourceTree = "<group>"; };
+		863BE7F41745D89C00576FB6 /* KBComposeTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeTwitterViewController.h; sourceTree = "<group>"; };
+		863BE7F51745D89C00576FB6 /* KBComposeTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeTwitterViewController.m; sourceTree = "<group>"; };
+		863BE7F81745D8A300576FB6 /* KBComposeFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeFacebookViewController.h; sourceTree = "<group>"; };
+		863BE7F91745D8A300576FB6 /* KBComposeFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeFacebookViewController.m; sourceTree = "<group>"; };
+		863BE8031745F01600576FB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		863BE808174695B300576FB6 /* KBComposeAttachmentFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeAttachmentFrame.png; sourceTree = "<group>"; };
+		863BE809174695B300576FB6 /* KBComposeAttachmentFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeAttachmentFrame@2x.png"; sourceTree = "<group>"; };
+		863BE80C17469A2D00576FB6 /* KBComposePaperClip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposePaperClip.png; sourceTree = "<group>"; };
+		863BE80D17469A2F00576FB6 /* KBComposePaperClip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposePaperClip@2x.png"; sourceTree = "<group>"; };
+		863BE8111746E49A00576FB6 /* Saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Saturn.jpg; path = Samples/Saturn.jpg; sourceTree = "<group>"; };
+		863BE8131746FD9500576FB6 /* Sunset.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sunset.jpg; path = Samples/Sunset.jpg; sourceTree = "<group>"; };
+		865595691747159100E7F603 /* KBComposeURLAttachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeURLAttachment.png; sourceTree = "<group>"; };
+		8655956A1747159100E7F603 /* KBComposeURLAttachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeURLAttachment@2x.png"; sourceTree = "<group>"; };
+		86951C4C174D6584000B95A8 /* KBComposeViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBComposeViewController_iPad.xib; sourceTree = "<group>"; };
+		86951C4D174D6584000B95A8 /* KBComposeViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBComposeViewController_iPhone4.xib; sourceTree = "<group>"; };
+		86951C4E174D6584000B95A8 /* KBComposeViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBComposeViewController_iPhone5.xib; sourceTree = "<group>"; };
+		86951C56174D8550000B95A8 /* KBComposeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeHeaders.h; sourceTree = "<group>"; };
+		86951C57174D8550000B95A8 /* KBComposeRuledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeRuledView.h; sourceTree = "<group>"; };
+		86951C58174D8550000B95A8 /* KBComposeRuledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeRuledView.m; sourceTree = "<group>"; };
+		86951C59174D8550000B95A8 /* KBComposeSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeSheetView.h; sourceTree = "<group>"; };
+		86951C5A174D8550000B95A8 /* KBComposeSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeSheetView.m; sourceTree = "<group>"; };
+		86951C5B174D8550000B95A8 /* KBComposeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeTextView.h; sourceTree = "<group>"; };
+		86951C5C174D8550000B95A8 /* KBComposeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeTextView.m; sourceTree = "<group>"; };
+		86951C5D174D8550000B95A8 /* KBComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBComposeViewController.h; sourceTree = "<group>"; };
+		86951C5E174D8550000B95A8 /* KBComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBComposeViewController.m; sourceTree = "<group>"; };
+		86A31F621751AA750084C057 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		86A31F631751AA750084C057 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		86A31F641751AA750084C057 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		86A31F651751AA750084C057 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		86D339DB174C5B1800691CA0 /* KBComposeTwitterNavigationBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeTwitterNavigationBar.png; sourceTree = "<group>"; };
+		86D339DC174C5B1800691CA0 /* KBComposeTwitterNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeTwitterNavigationBar@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		863BE7A41745BB0000576FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863BE8041745F01600576FB6 /* QuartzCore.framework in Frameworks */,
+				863BE7AB1745BB0000576FB6 /* UIKit.framework in Frameworks */,
+				863BE7AD1745BB0000576FB6 /* Foundation.framework in Frameworks */,
+				863BE7AF1745BB0000576FB6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		863BE79E1745BB0000576FB6 = {
+			isa = PBXGroup;
+			children = (
+				863BE7B01745BB0000576FB6 /* KBComposeSocial */,
+				863BE7A91745BB0000576FB6 /* Frameworks */,
+				863BE7A81745BB0000576FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		863BE7A81745BB0000576FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7A71745BB0000576FB6 /* KBComposeSocial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		863BE7A91745BB0000576FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7AA1745BB0000576FB6 /* UIKit.framework */,
+				863BE7AC1745BB0000576FB6 /* Foundation.framework */,
+				863BE7AE1745BB0000576FB6 /* CoreGraphics.framework */,
+				863BE8031745F01600576FB6 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		863BE7B01745BB0000576FB6 /* KBComposeSocial */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7CD1745BB1B00576FB6 /* KBComposeSocial */,
+				863BE7B91745BB0000576FB6 /* AppDelegate.h */,
+				863BE7BA1745BB0000576FB6 /* AppDelegate.m */,
+				863BE7C21745BB0000576FB6 /* ViewController.h */,
+				863BE7C31745BB0000576FB6 /* ViewController.m */,
+				863BE7C51745BB0000576FB6 /* ViewController.xib */,
+				863BE8101746E48300576FB6 /* Samples */,
+				863BE7B11745BB0000576FB6 /* Supporting Files */,
+			);
+			path = KBComposeSocial;
+			sourceTree = "<group>";
+		};
+		863BE7B11745BB0000576FB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86A31F621751AA750084C057 /* Icon-72.png */,
+				86A31F631751AA750084C057 /* Icon-72@2x.png */,
+				86A31F641751AA750084C057 /* Icon.png */,
+				86A31F651751AA750084C057 /* Icon@2x.png */,
+				863BE7B21745BB0000576FB6 /* KBComposeSocial-Info.plist */,
+				863BE7B31745BB0000576FB6 /* InfoPlist.strings */,
+				863BE7B61745BB0000576FB6 /* main.m */,
+				863BE7B81745BB0000576FB6 /* KBComposeSocial-Prefix.pch */,
+				863BE7BC1745BB0000576FB6 /* Default.png */,
+				863BE7BE1745BB0000576FB6 /* Default@2x.png */,
+				863BE7C01745BB0000576FB6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		863BE7CD1745BB1B00576FB6 /* KBComposeSocial */ = {
+			isa = PBXGroup;
+			children = (
+				86951C55174D8550000B95A8 /* General */,
+				863BE7F71745D8A300576FB6 /* Facebook */,
+				863BE7F31745D89C00576FB6 /* Twitter */,
+				86951C4B174D6584000B95A8 /* XIBs */,
+				863BE7E31745D55400576FB6 /* Categories */,
+				863BE7CF1745BB1B00576FB6 /* Resources */,
+			);
+			path = KBComposeSocial;
+			sourceTree = "<group>";
+		};
+		863BE7CF1745BB1B00576FB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				865595691747159100E7F603 /* KBComposeURLAttachment.png */,
+				8655956A1747159100E7F603 /* KBComposeURLAttachment@2x.png */,
+				863BE80C17469A2D00576FB6 /* KBComposePaperClip.png */,
+				863BE80D17469A2F00576FB6 /* KBComposePaperClip@2x.png */,
+				863BE808174695B300576FB6 /* KBComposeAttachmentFrame.png */,
+				863BE809174695B300576FB6 /* KBComposeAttachmentFrame@2x.png */,
+				863BE7D01745BB1B00576FB6 /* KBComposeCardBackground.png */,
+				863BE7D11745BB1B00576FB6 /* KBComposeCardBackground@2x.png */,
+				863BE7D21745BB1B00576FB6 /* KBComposeCardHeaderLine.png */,
+				863BE7D31745BB1B00576FB6 /* KBComposeCardHeaderLine@2x.png */,
+				863BE7D41745BB1B00576FB6 /* KBComposeFacebookSendButton.png */,
+				863BE7D51745BB1B00576FB6 /* KBComposeFacebookSendButton@2x.png */,
+				860F5209174C51E40059566C /* KBComposeTwitterSendButton.png */,
+				860F520A174C51E40059566C /* KBComposeTwitterSendButton@2x.png */,
+				860F520D174C52B90059566C /* KBComposeTwitterCancelButton.png */,
+				860F520E174C52B90059566C /* KBComposeTwitterCancelButton@2x.png */,
+				86D339DB174C5B1800691CA0 /* KBComposeTwitterNavigationBar.png */,
+				86D339DC174C5B1800691CA0 /* KBComposeTwitterNavigationBar@2x.png */,
+				863BE7D61745BB1B00576FB6 /* KBComposeFacebookNavigationBar.png */,
+				863BE7D71745BB1B00576FB6 /* KBComposeFacebookNavigationBar@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		863BE7E31745D55400576FB6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7E41745D55400576FB6 /* UIImage+Support.h */,
+				863BE7E51745D55400576FB6 /* UIImage+Support.m */,
+				863BE7E71745D66900576FB6 /* NSString+Support.h */,
+				863BE7E81745D66900576FB6 /* NSString+Support.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		863BE7F31745D89C00576FB6 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7F41745D89C00576FB6 /* KBComposeTwitterViewController.h */,
+				863BE7F51745D89C00576FB6 /* KBComposeTwitterViewController.m */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		863BE7F71745D8A300576FB6 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				863BE7F81745D8A300576FB6 /* KBComposeFacebookViewController.h */,
+				863BE7F91745D8A300576FB6 /* KBComposeFacebookViewController.m */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		863BE8101746E48300576FB6 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				863BE8111746E49A00576FB6 /* Saturn.jpg */,
+				863BE8131746FD9500576FB6 /* Sunset.jpg */,
+				86031B341751B5B800F6C561 /* twitter.png */,
+				86031B351751B5B800F6C561 /* twitter@2x.png */,
+				86031B301751B5AF00F6C561 /* facebook.png */,
+				86031B311751B5AF00F6C561 /* facebook@2x.png */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		86951C4B174D6584000B95A8 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				86951C4D174D6584000B95A8 /* KBComposeViewController_iPhone4.xib */,
+				86951C4E174D6584000B95A8 /* KBComposeViewController_iPhone5.xib */,
+				86951C4C174D6584000B95A8 /* KBComposeViewController_iPad.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		86951C55174D8550000B95A8 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				86951C56174D8550000B95A8 /* KBComposeHeaders.h */,
+				86951C57174D8550000B95A8 /* KBComposeRuledView.h */,
+				86951C58174D8550000B95A8 /* KBComposeRuledView.m */,
+				86951C59174D8550000B95A8 /* KBComposeSheetView.h */,
+				86951C5A174D8550000B95A8 /* KBComposeSheetView.m */,
+				86951C5B174D8550000B95A8 /* KBComposeTextView.h */,
+				86951C5C174D8550000B95A8 /* KBComposeTextView.m */,
+				86951C5D174D8550000B95A8 /* KBComposeViewController.h */,
+				86951C5E174D8550000B95A8 /* KBComposeViewController.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		863BE7A61745BB0000576FB6 /* KBComposeSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863BE7CA1745BB0000576FB6 /* Build configuration list for PBXNativeTarget "KBComposeSocial" */;
+			buildPhases = (
+				863BE7A31745BB0000576FB6 /* Sources */,
+				863BE7A41745BB0000576FB6 /* Frameworks */,
+				863BE7A51745BB0000576FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KBComposeSocial;
+			productName = KBComposeSocial;
+			productReference = 863BE7A71745BB0000576FB6 /* KBComposeSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		863BE79F1745BB0000576FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Paul Sholtz";
+			};
+			buildConfigurationList = 863BE7A21745BB0000576FB6 /* Build configuration list for PBXProject "KBComposeSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 863BE79E1745BB0000576FB6;
+			productRefGroup = 863BE7A81745BB0000576FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				863BE7A61745BB0000576FB6 /* KBComposeSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		863BE7A51745BB0000576FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863BE7B51745BB0000576FB6 /* InfoPlist.strings in Resources */,
+				863BE7BD1745BB0000576FB6 /* Default.png in Resources */,
+				863BE7BF1745BB0000576FB6 /* Default@2x.png in Resources */,
+				863BE7C11745BB0000576FB6 /* Default-568h@2x.png in Resources */,
+				863BE7C71745BB0000576FB6 /* ViewController.xib in Resources */,
+				863BE7D81745BB1B00576FB6 /* KBComposeCardBackground.png in Resources */,
+				863BE7D91745BB1B00576FB6 /* KBComposeCardBackground@2x.png in Resources */,
+				863BE7DA1745BB1B00576FB6 /* KBComposeCardHeaderLine.png in Resources */,
+				863BE7DB1745BB1B00576FB6 /* KBComposeCardHeaderLine@2x.png in Resources */,
+				863BE7DC1745BB1B00576FB6 /* KBComposeFacebookSendButton.png in Resources */,
+				863BE7DD1745BB1B00576FB6 /* KBComposeFacebookSendButton@2x.png in Resources */,
+				863BE7DE1745BB1B00576FB6 /* KBComposeFacebookNavigationBar.png in Resources */,
+				863BE7DF1745BB1B00576FB6 /* KBComposeFacebookNavigationBar@2x.png in Resources */,
+				863BE80A174695B400576FB6 /* KBComposeAttachmentFrame.png in Resources */,
+				863BE80B174695B400576FB6 /* KBComposeAttachmentFrame@2x.png in Resources */,
+				863BE80E17469A3000576FB6 /* KBComposePaperClip.png in Resources */,
+				863BE80F17469A3000576FB6 /* KBComposePaperClip@2x.png in Resources */,
+				863BE8121746E49A00576FB6 /* Saturn.jpg in Resources */,
+				863BE8141746FD9500576FB6 /* Sunset.jpg in Resources */,
+				8655956B1747159100E7F603 /* KBComposeURLAttachment.png in Resources */,
+				8655956C1747159100E7F603 /* KBComposeURLAttachment@2x.png in Resources */,
+				860F520B174C51E40059566C /* KBComposeTwitterSendButton.png in Resources */,
+				860F520C174C51E40059566C /* KBComposeTwitterSendButton@2x.png in Resources */,
+				860F520F174C52B90059566C /* KBComposeTwitterCancelButton.png in Resources */,
+				860F5210174C52B90059566C /* KBComposeTwitterCancelButton@2x.png in Resources */,
+				86D339DD174C5B1800691CA0 /* KBComposeTwitterNavigationBar.png in Resources */,
+				86D339DE174C5B1800691CA0 /* KBComposeTwitterNavigationBar@2x.png in Resources */,
+				86951C4F174D6584000B95A8 /* KBComposeViewController_iPad.xib in Resources */,
+				86951C50174D6584000B95A8 /* KBComposeViewController_iPhone4.xib in Resources */,
+				86951C51174D6584000B95A8 /* KBComposeViewController_iPhone5.xib in Resources */,
+				86A31F661751AA750084C057 /* Icon-72.png in Resources */,
+				86A31F671751AA750084C057 /* Icon-72@2x.png in Resources */,
+				86A31F681751AA750084C057 /* Icon.png in Resources */,
+				86A31F691751AA750084C057 /* Icon@2x.png in Resources */,
+				86031B321751B5AF00F6C561 /* facebook.png in Resources */,
+				86031B331751B5AF00F6C561 /* facebook@2x.png in Resources */,
+				86031B361751B5B800F6C561 /* twitter.png in Resources */,
+				86031B371751B5B800F6C561 /* twitter@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863BE7A31745BB0000576FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863BE7B71745BB0000576FB6 /* main.m in Sources */,
+				863BE7BB1745BB0000576FB6 /* AppDelegate.m in Sources */,
+				863BE7C41745BB0000576FB6 /* ViewController.m in Sources */,
+				863BE7E61745D55400576FB6 /* UIImage+Support.m in Sources */,
+				863BE7E91745D66900576FB6 /* NSString+Support.m in Sources */,
+				863BE7F61745D89C00576FB6 /* KBComposeTwitterViewController.m in Sources */,
+				863BE7FA1745D8A300576FB6 /* KBComposeFacebookViewController.m in Sources */,
+				86951C5F174D8550000B95A8 /* KBComposeRuledView.m in Sources */,
+				86951C60174D8550000B95A8 /* KBComposeSheetView.m in Sources */,
+				86951C61174D8550000B95A8 /* KBComposeTextView.m in Sources */,
+				86951C62174D8550000B95A8 /* KBComposeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		863BE7B31745BB0000576FB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				863BE7B41745BB0000576FB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		863BE7C51745BB0000576FB6 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				863BE7C61745BB0000576FB6 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		863BE7C81745BB0000576FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		863BE7C91745BB0000576FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		863BE7CB1745BB0000576FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBComposeSocial/KBComposeSocial-Prefix.pch";
+				INFOPLIST_FILE = "KBComposeSocial/KBComposeSocial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		863BE7CC1745BB0000576FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBComposeSocial/KBComposeSocial-Prefix.pch";
+				INFOPLIST_FILE = "KBComposeSocial/KBComposeSocial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		863BE7A21745BB0000576FB6 /* Build configuration list for PBXProject "KBComposeSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863BE7C81745BB0000576FB6 /* Debug */,
+				863BE7C91745BB0000576FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863BE7CA1745BB0000576FB6 /* Build configuration list for PBXNativeTarget "KBComposeSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863BE7CB1745BB0000576FB6 /* Debug */,
+				863BE7CC1745BB0000576FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 863BE79F1745BB0000576FB6 /* Project object */;
+}
