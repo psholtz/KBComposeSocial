@@ -33,7 +33,7 @@ Clients using the SDK should implement and use the <code>composeViewControllerDi
 Important Note
 -------------- 
 
-<b><span style="color:#cc0101;"">THIS SOFTWARE DOES NOT ACTUALLY POST TO FACEBOOK OR TWITTER!</span></b>
+<b>THIS SOFTWARE DOES NOT ACTUALLY POST TO FACEBOOK OR TWITTER!</b>
 
 Rather, it offers user interface controls you can use to capture text, images and urls from your users.
 
