@@ -1,9 +1,7 @@
 KBComposeSocial
 ===============
 
-<img src="http://farm3.staticflickr.com/2865/12026010826_17db305edc_n.jpg" /> <img src="http://farm6.staticflickr.com/5542/12025580854_4aa172efb6_n.jpg" />
-<img src="http://farm6.staticflickr.com/5492/12025528914_97b1b11047_n.jpg" /> <img src="http://farm8.staticflickr.com/7365/12026184016_55f5dce081_n.jpg" />
-<img src="http://farm4.staticflickr.com/3767/12026010476_6d1d6e2f70_n.jpg" /> <img src="http://farm6.staticflickr.com/5511/12025342805_1c82f71931_n.jpg" />
+<img src="http://farm6.staticflickr.com/5492/12025528914_97b1b11047.jpg" />
 
 KBComposeSocial provides custom iOS-style dialog boxes for posting to Facebook and Twitter.
 
