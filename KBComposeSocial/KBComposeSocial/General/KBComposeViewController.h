@@ -37,8 +37,8 @@
 @protocol KBComposeViewControllerDelegate <NSObject>
 
 @optional
-- (void)composeViewControllerDidCancel:(id)sender;
-- (void)composeViewControllerDidPost:(id)sender;
+- (void)composeViewControllerDidPressCancel:(id)sender;
+- (void)composeViewControllerDidPressPost:(id)sender;
 
 @end
 

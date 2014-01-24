@@ -24,8 +24,6 @@
 //  Created by Paul Sholtz on 5/15/13.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIImage (Support)
 
 + (UIImage*)imageWithName:(NSString*)name;

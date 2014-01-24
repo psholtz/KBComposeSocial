@@ -158,6 +158,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
     // Configure frames for orientation
     [self updateFramesForOrientation:self.interfaceOrientation];
     
@@ -177,6 +179,12 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
 {
     [self updateFramesForOrientation:interfaceOrientation];
+}
+
+// Hacks to adjust iOS7 position
+- (void)adjustView:(UIView*)view1 withMargin:(CGFloat)margin {
+    CGRect tmp = view1.frame;
+    view1.frame = CGRectMake(tmp.origin.x, tmp.origin.y + margin, tmp.size.width, tmp.size.height);
 }
 
 #pragma mark -
@@ -271,16 +279,16 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     
     [self hideViewController];
     
-    if ( self.delegate != nil && [self.delegate respondsToSelector:@selector(composeViewControllerDidPost:)] ) {
-        [self.delegate composeViewControllerDidPost:self];
+    if ( self.delegate != nil && [self.delegate respondsToSelector:@selector(composeViewControllerDidPressPost:)] ) {
+        [self.delegate composeViewControllerDidPressPost:self];
     }
 }
 
 - (IBAction)pressCancel:(id)sender {
     [self hideViewController];
     
-    if ( self.delegate != nil && [self.delegate respondsToSelector:@selector(composeViewControllerDidCancel:)] ) {
-        [self.delegate composeViewControllerDidCancel:self];
+    if ( self.delegate != nil && [self.delegate respondsToSelector:@selector(composeViewControllerDidPressCancel:)] ) {
+        [self.delegate composeViewControllerDidPressCancel:self];
     }
 }
 
@@ -356,8 +364,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     self.navImage.frame = CGRectMake(0.0f, 0.0f, cardWidth, 44.0f);
     self.navLabel.frame = CGRectMake(0.0f, 11.0f, cardWidth, 21.0f);
     self.countLabel.frame = CGRectMake(countLeft, countTop, countWidth, countHeight);
-    
-    // Configure CG Layer for navimage
+
+    // Configure CA Layer for navimage
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     UIBezierPath *roundedPath = [UIBezierPath bezierPathWithRoundedRect:self.navImage.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(13.0f, 13.0f)];
     [roundedPath closePath];
@@ -399,11 +407,17 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
                                               self.sheetView.bounds.size.width,
                                               textHeight);
     self.textView.frame = CGRectMake(0.0f,
-                                     0.0f,
+                                     self.textView.frame.origin.y,
                                      textWidth,
                                      self.textViewContainer.frame.size.height - 6.0f);
     
     [self updateCountLabel];
+    
+    if ( SYSTEM_VERSION_GREATER_THAN(@"7.0") ) {
+        CGFloat margin1 = 16.0f;
+        [self adjustView:self.sheetView withMargin:margin1];
+        [self adjustView:self.paperClipView withMargin:margin1];
+    }
 }
 
 - (void)updateAttachments {

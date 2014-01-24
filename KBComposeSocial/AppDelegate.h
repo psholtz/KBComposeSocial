@@ -24,8 +24,6 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
-#import <UIKit/UIKit.h>
-
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

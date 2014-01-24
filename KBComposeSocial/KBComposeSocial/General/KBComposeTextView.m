@@ -26,12 +26,14 @@
 
 #import "KBComposeTextView.h"
 
+#import "KBComposeHeaders.h"
+
 #import "KBComposeRuledView.h"
 
 @interface KBComposeTextView ()
 
 @property (nonatomic, readonly) CGRect ruledViewFrame;
-@property (nonatomic, strong)   KBComposeRuledView * ruledView;
+@property (nonatomic, strong) KBComposeRuledView * ruledView;
 
 - (void)configure;
 
@@ -45,6 +47,10 @@
     CGFloat extraForBounce = 200.0f;
     CGFloat width = 1024.0f;
     CGFloat textAlignmentOffset = -2.0f;
+    
+    if ( SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ) {
+        textAlignmentOffset = 5.0f;
+    }
     
     CGRect f = CGRectMake(0.0f,
                           -extraForBounce + textAlignmentOffset,

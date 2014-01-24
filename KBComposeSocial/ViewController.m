@@ -265,7 +265,7 @@
 
 #pragma mark -
 #pragma mark Compose Delegate
-- (void)composeViewControllerDidCancel:(id)sender {
+- (void)composeViewControllerDidPressCancel:(id)sender {
     KBComposeViewController *controller = (KBComposeViewController*)sender;
     if ( [controller isServiceTypeFacebook] )
     {
@@ -282,7 +282,7 @@
     }
 }
 
-- (void)composeViewControllerDidPost:(id)sender {
+- (void)composeViewControllerDidPressPost:(id)sender {
     KBComposeViewController *controller = (KBComposeViewController*)sender;
     if ( [controller isServiceTypeFacebook] )
     {
