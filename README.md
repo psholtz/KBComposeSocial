@@ -35,7 +35,7 @@ Important Note
 
 Rather, it offers user interface controls you can use to capture text, images and urls from your users.
 
-Clients wishing to forward collection information onto the social networks must link with the Facebook and/or Twitter Social SDK implementation of their choice in the <code>composeViewControllerDidPressPost:</code> API.
+Clients wishing to forward collected information onto the social networks must link with the Facebook and/or Twitter Social SDK implementation of their choice in the <code>composeViewControllerDidPressPost:</code> API.
 
 Example Usage 
 ------------- 
