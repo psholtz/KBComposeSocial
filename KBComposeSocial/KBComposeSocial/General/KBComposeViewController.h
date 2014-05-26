@@ -98,7 +98,7 @@ typedef enum {
 @property (nonatomic, readonly) NSInteger remainingChars;
 
 // Data Items (to be passed on to social services)
-@property (nonatomic, strong, readonly) NSString * text;
+@property (nonatomic, copy, readonly)   NSString * text;
 @property (nonatomic, strong, readonly) NSArray  * images;
 @property (nonatomic, strong, readonly) NSArray  * urls;
 @property (nonatomic, assign, readonly) NSInteger  attachmentsCount;
