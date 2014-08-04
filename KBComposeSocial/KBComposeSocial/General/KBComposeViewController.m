@@ -448,7 +448,7 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 }
 
 - (void)updateCountLabel {
-    self.countLabel.text = [NSString stringWithFormat:@"%d", self.remainingChars];
+    self.countLabel.text = [NSString stringWithFormat:@"%ld", (long)self.remainingChars];
 }
 
 - (void)hideViewController {
