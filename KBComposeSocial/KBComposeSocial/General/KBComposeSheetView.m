@@ -30,35 +30,19 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#pragma mark -
+#pragma mark Class Extension
 @interface KBComposeSheetView ()
 
 @property (nonatomic, strong) UIView * backgroundView;
 
-- (void)configure;
-
 @end
 
+#pragma mark -
+#pragma mark Implementation
 @implementation KBComposeSheetView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self configure];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if ( self ) {
-        [self configure];
-    }
-    return self;
-}
-
-- (void)configure
+-(void)layoutSubviews
 {
     self.backgroundColor = [UIColor clearColor];
     

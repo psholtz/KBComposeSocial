@@ -26,34 +26,15 @@
 
 #import "KBComposeRuledView.h"
 
-@interface KBComposeRuledView ()
-
-- (void)configure;
-
-@end
-
+#pragma mark -
+#pragma mark Implementation
 @implementation KBComposeRuledView
 
 #pragma mark -
 #pragma mark View Lifecycle
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self configure];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if ( self ) {
-        [self configure];
-    }
-    return self;
-}
-
-- (void)configure {
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.backgroundColor = [UIColor clearColor];
     self.contentMode = UIViewContentModeRedraw;
     self.userInteractionEnabled = NO;

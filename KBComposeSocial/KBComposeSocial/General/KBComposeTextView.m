@@ -30,15 +30,17 @@
 
 #import "KBComposeRuledView.h"
 
+#pragma mark -
+#pragma mark Class Extension
 @interface KBComposeTextView ()
 
 @property (nonatomic, readonly) CGRect ruledViewFrame;
 @property (nonatomic, strong) KBComposeRuledView * ruledView;
 
-- (void)configure;
-
 @end
 
+#pragma mark -
+#pragma mark Implementation
 @implementation KBComposeTextView
 
 #pragma mark -
@@ -62,24 +64,7 @@
 
 #pragma mark -
 #pragma mark View Lifecycle
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self configure];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if ( self ) {
-        [self configure];
-    }
-    return self;
-}
-
-- (void)configure {
+- (void)layoutSubviews {
     self.clipsToBounds = YES;
     
     _ruledView = [[KBComposeRuledView alloc] initWithFrame:self.ruledViewFrame];
