@@ -455,7 +455,10 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     if ( [self respondsToSelector:@selector(dismissViewControllerAnimated:completion:)] ) {
         [self dismissViewControllerAnimated:YES completion:NULL];
     } else if ( [self respondsToSelector:@selector(dismissModalViewControllerAnimated:)] ) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         [self dismissModalViewControllerAnimated:YES];
+#pragma clang diagnostic pop
     } else {
         NSLog(@"[KBComposeHeaders] - Could not dismiss UIViewController: %@", self);
     }

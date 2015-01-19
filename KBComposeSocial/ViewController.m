@@ -257,7 +257,10 @@
     if ( [self respondsToSelector:@selector(presentViewController:animated:completion:)] ) {
         [self presentViewController:controller animated:YES completion:NULL];
     } else if ( [self respondsToSelector:@selector(presentModalViewController:animated:)] ) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         [self presentModalViewController:controller animated:YES];
+#pragma clang diagnostic pop
     } else {
         NSLog(@"[KBComposeHeaders] - Could not display UIViewController: %@", controller);
     }
