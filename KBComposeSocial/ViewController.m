@@ -109,10 +109,6 @@
     }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    return TRUE;
-}
-
 // Hack to adjust position for iOS7
 - (void)adjustView:(UIView*)view1 withMargin:(CGFloat)margin {
     CGRect tmp = view1.frame;
@@ -273,14 +269,14 @@
     if ( [controller isServiceTypeFacebook] )
     {
         // Facebook Cancel
-        NSLog(@"++ facebook cancel");
+        NSLog(@"++ Facebook Cancel");
         return;
     }
     
     if ( [controller isServiceTypeTwitter] )
     {
         // Twitter Cancel
-        NSLog(@"++ twitter cancel");
+        NSLog(@"++ Twitter Cancel");
         return;
     }
 }
@@ -290,13 +286,13 @@
     if ( [controller isServiceTypeFacebook] )
     {
         // Facebook Post
-        NSLog(@"++ facebook post");
+        NSLog(@"++ Facebook Post");
         return;
     }
     if ( [controller isServiceTypeTwitter] )
     {
         // Twitter Post
-        NSLog(@"++ twitter post");
+        NSLog(@"++ Twitter Post");
         return;
     }
 }
