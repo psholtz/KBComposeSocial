@@ -73,10 +73,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
+- (void)viewWillLayoutSubviews {
     if ( SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ) {
         CGFloat margin1 = 16.0f;
         [self adjustView:self.buttonFacebook1 withMargin:margin1];
@@ -92,7 +89,7 @@
         [self adjustView:self.buttonTwitter4 withMargin:margin1];
         [self adjustView:self.buttonTwitter5 withMargin:margin1];
         [self adjustView:self.buttonTwitter6 withMargin:margin1];
-       
+        
         [self adjustView:self.labelFacebook1 withMargin:margin1];
         [self adjustView:self.labelFacebook2 withMargin:margin1];
         [self adjustView:self.labelFacebook3 withMargin:margin1];
