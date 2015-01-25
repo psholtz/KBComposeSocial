@@ -119,15 +119,16 @@ typedef NS_ENUM(NSInteger, KBServiceType) {
 //
 + (id)composeViewControllerForServiceType:(KBServiceType)serviceType;
 
-#pragma mark - Instance Methods
+#pragma mark - Check Service Type
 //
 // Check Service Type
 //
 - (BOOL)isServiceTypeFacebook;
 - (BOOL)isServiceTypeTwitter;
 
+#pragma mark - Composing Posts
 //
-// Composiing Posts
+// Composing Posts
 //
 - (BOOL)setInitialText:(NSString*)text;
 - (BOOL)addImage:(UIImage*)image;
@@ -135,6 +136,7 @@ typedef NS_ENUM(NSInteger, KBServiceType) {
 - (BOOL)addURL:(NSURL*)url;
 - (BOOL)removeAllURLs;
 
+#pragma mark - Interface Builder Actions
 //
 // IBAction Methods
 //
