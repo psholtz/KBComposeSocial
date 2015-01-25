@@ -24,16 +24,22 @@
 //  Created by Paul Sholtz on 5/15/13.
 //
 
+#pragma mark - Defines
+
 #define kbWidthLabel    @"width"
 #define kbHeightLabel   @"height"
 
 #import "UIImage+Support.h"
 
+#pragma mark - UIImage Category (Support)
+
 @implementation UIImage (Support)
 
+#pragma mark - Loading API
+
 //
-// The memory leak in +(UIImage*)imagenamed:(NSString*)name should be fixed,
-// but probably safely to use this category anyway
+// In older iOS SDKs there was a potential memory leak in -[UIImage imageNamed:].
+// It's been fixed now, but this method can be used as a work-around.
 //
 + (UIImage*)imageWithName:(NSString*)name
 {
@@ -43,6 +49,8 @@
 
     return [UIImage imageWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:filename ofType:suffix]]];
 }
+
+#pragma mark - Scalaing APIs
 
 //
 // Categories for scaling the image

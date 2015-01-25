@@ -26,12 +26,12 @@
 
 #import "KBComposeRuledView.h"
 
-#pragma mark -
-#pragma mark Implementation
+#pragma mark - Class Implementation
+
 @implementation KBComposeRuledView
 
-#pragma mark -
-#pragma mark View Lifecycle
+#pragma mark - View Lifecycle
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
@@ -44,10 +44,9 @@
     _lineColor = [UIColor colorWithWhite:0.5f alpha:0.15f];
 }
 
-#pragma mark -
-#pragma mark Drawing Code
-- (void)drawRect:(CGRect)rect
-{
+#pragma mark - Drawing Code
+
+- (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetStrokeColorWithColor(context, self.lineColor.CGColor);

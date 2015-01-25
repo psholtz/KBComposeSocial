@@ -25,16 +25,22 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#import <UIKit/UIKit.h>
+
 #import "KBComposeHeaders.h"
+
+#pragma mark - Defines
 
 #define KB_GUARD_POSTING_NULL_STRING            1
 
 @class KBComposeTextView;
 @class KBComposeSheetView;
 
-#pragma mark -
-#pragma mark Callback Protocol
+#pragma mark - KBComposeViewController Protocol
+
 @protocol KBComposeViewControllerDelegate <NSObject>
+
+#pragma mark - Optional
 
 @optional
 - (void)composeViewControllerDidPressCancel:(id)sender;
@@ -48,8 +54,8 @@ typedef enum {
     KBServiceTypeTwitter,
 } KBServiceTypeConstant;
 
-#pragma mark -
-#pragma mark Interface
+#pragma mark - Class Interface
+
 @interface KBComposeViewController : UIViewController {
 @protected
     NSString        * _internalText;
@@ -74,9 +80,7 @@ typedef enum {
     UIColor  * _cancelShadowColor;
 }
 
-@property (nonatomic, assign)  KBServiceTypeConstant serviceType;
-
-@property (nonatomic, KB_WEAK) id<KBComposeViewControllerDelegate> delegate;
+#pragma mark - Interface Builder Outlets
 
 // Common IB Properties between subclasses
 @property (nonatomic, KB_WEAK) IBOutlet KBComposeTextView  * textView;
@@ -93,6 +97,12 @@ typedef enum {
 @property (nonatomic, KB_WEAK) IBOutlet UIImageView * attachment1ImageView;
 @property (nonatomic, KB_WEAK) IBOutlet UIImageView * paperClipView;
 
+#pragma mark - Properties 
+
+@property (nonatomic, assign)  KBServiceTypeConstant serviceType;
+
+@property (nonatomic, KB_WEAK) id<KBComposeViewControllerDelegate> delegate;
+
 // Used to make sure we are within the 140 Tweet limit
 @property (nonatomic, readonly) NSInteger postLength;
 @property (nonatomic, readonly) NSInteger remainingChars;
@@ -103,25 +113,31 @@ typedef enum {
 @property (nonatomic, strong, readonly) NSArray  * urls;
 @property (nonatomic, assign, readonly) NSInteger  attachmentsCount;
 
-#pragma mark -
-#pragma mark Constructors
+#pragma mark - Class Methods
+//
+// Constructors
+//
 + (id)composeViewControllerForServiceType:(KBServiceTypeConstant)serviceType;
 
-#pragma mark -
-#pragma mark Check Service Type
+#pragma mark - Instance Methods
+//
+// Check Service Type
+//
 - (BOOL)isServiceTypeFacebook;
 - (BOOL)isServiceTypeTwitter;
 
-#pragma mark -
-#pragma mark Composing Posts
+//
+// Composiing Posts
+//
 - (BOOL)setInitialText:(NSString*)text;
 - (BOOL)addImage:(UIImage*)image;
 - (BOOL)removeAllImages;
 - (BOOL)addURL:(NSURL*)url;
 - (BOOL)removeAllURLs;
 
-#pragma mark -
-#pragma mark IBAction Methods
+//
+// IBAction Methods
+//
 - (IBAction)pressPost:(id)sender;
 - (IBAction)pressCancel:(id)sender;
 

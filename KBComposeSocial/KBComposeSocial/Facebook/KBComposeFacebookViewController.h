@@ -26,6 +26,7 @@
 
 #import "KBComposeViewController.h"
 
-@interface KBComposeFacebookViewController : KBComposeViewController
+#pragma mark - Class Interface 
 
+@interface KBComposeFacebookViewController : KBComposeViewController
 @end

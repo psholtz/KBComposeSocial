@@ -31,16 +31,18 @@ const static NSString * twitterCancelButtonName    = @"KBComposeTwitterCancelBut
 const static NSString * twitterNavigationImageName = @"KBComposeTwitterNavigationBar.png";
 const static NSString * twitterLabelTitle          = @"Tweet";
 
-@interface KBComposeTwitterViewController ()
+#pragma mark - Class Extension
 
+@interface KBComposeTwitterViewController ()
 @end
+
+#pragma mark - Class Implementation
 
 @implementation KBComposeTwitterViewController
 
-#pragma mark -
-#pragma mark View Lifecycle
-- (id)init
-{
+#pragma mark - View Lifecycle
+
+- (id)init {
     NSString * name = nil;
     if IS_IPHONE_4 {
         name = @"KBComposeViewController_iPhone4";

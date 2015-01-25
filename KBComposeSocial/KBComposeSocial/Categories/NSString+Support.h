@@ -24,7 +24,11 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#pragma mark - NSString Category (Support)
+
 @interface NSString (Support)
+
+#pragma mark - Trim API
 
 - (NSString*)trim;
 

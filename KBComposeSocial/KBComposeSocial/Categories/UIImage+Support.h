@@ -24,9 +24,15 @@
 //  Created by Paul Sholtz on 5/15/13.
 //
 
+#pragma mark - UIImage Category (Support)
+
 @interface UIImage (Support)
 
+#pragma mark - Loading API
+
 + (UIImage*)imageWithName:(NSString*)name;
+
+#pragma mark - Scaling APIs 
 
 - (UIImage*)scaleToSize:(CGSize)newSize;
 - (UIImage*)scaleAspectToFit:(CGSize)newSize;

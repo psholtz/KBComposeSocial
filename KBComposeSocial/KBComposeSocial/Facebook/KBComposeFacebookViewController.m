@@ -31,14 +31,17 @@ const static NSString *facebookCancelButtonName    = @"KBComposeFacebookSendButt
 const static NSString *facebookNavigationImageName = @"KBComposeFacebookNavigationBar.png";
 const static NSString *facebookLabelTitle          = @"Facebook";
 
-@interface KBComposeFacebookViewController ()
+#pragma mark - Class Extension
 
+@interface KBComposeFacebookViewController ()
 @end
+
+#pragma mark - Class Implementation
 
 @implementation KBComposeFacebookViewController
 
-#pragma mark -
-#pragma mark View Lifecycle
+#pragma mark - View Lifecycle
+
 - (id)init {
     NSString * name = nil;
     if IS_IPHONE_4 {

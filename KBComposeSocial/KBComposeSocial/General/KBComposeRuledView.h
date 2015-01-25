@@ -24,7 +24,13 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#import <UIKit/UIKit.h>
+
+#pragma mark - Class Interface
+
 @interface KBComposeRuledView : UIView
+
+#pragma mark - Properties
 
 @property (nonatomic, assign) CGFloat   rowHeight;
 @property (nonatomic, assign) CGFloat   lineWidth;

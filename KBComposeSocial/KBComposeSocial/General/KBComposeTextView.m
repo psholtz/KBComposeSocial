@@ -30,21 +30,23 @@
 
 #import "KBComposeRuledView.h"
 
-#pragma mark -
-#pragma mark Class Extension
+#pragma mark - Class Extension
+
 @interface KBComposeTextView ()
+
+#pragma mark - Properties 
 
 @property (nonatomic, readonly) CGRect ruledViewFrame;
 @property (nonatomic, strong) KBComposeRuledView * ruledView;
 
 @end
 
-#pragma mark -
-#pragma mark Implementation
+#pragma mark - Class Implementation
+
 @implementation KBComposeTextView
 
-#pragma mark -
-#pragma mark Accessors
+#pragma mark - Accessors
+
 - (CGRect)ruledViewFrame {
     CGFloat extraForBounce = 200.0f;
     CGFloat width = 1024.0f;
@@ -62,8 +64,8 @@
     return f;
 }
 
-#pragma mark -
-#pragma mark View Lifecycle
+#pragma mark - View Lifecycle
+
 - (void)layoutSubviews {
     self.clipsToBounds = YES;
     

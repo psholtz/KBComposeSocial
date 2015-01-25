@@ -24,26 +24,29 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "KBComposeSheetView.h"
 
 #import "UIImage+Support.h"
 
-#import <QuartzCore/QuartzCore.h>
+#pragma mark - Class Extension
 
-#pragma mark -
-#pragma mark Class Extension
 @interface KBComposeSheetView ()
+
+#pragma mark - Properties 
 
 @property (nonatomic, strong) UIView * backgroundView;
 
 @end
 
-#pragma mark -
-#pragma mark Implementation
+#pragma mark - Class Implementation
+
 @implementation KBComposeSheetView
 
--(void)layoutSubviews
-{
+#pragma mark - View Lifecycle
+
+-(void)layoutSubviews {
     self.backgroundColor = [UIColor clearColor];
     
     self.layer.cornerRadius = 12.0f;

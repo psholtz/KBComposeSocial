@@ -24,22 +24,9 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#import <UIKit/UIKit.h>
+
+#pragma mark - Class Interface 
+
 @interface ViewController : UIViewController
-
-#pragma mark -
-#pragma mark IBAction Methods
-- (IBAction)pressFacebook1:(id)sender;
-- (IBAction)pressFacebook2:(id)sender;
-- (IBAction)pressFacebook3:(id)sender;
-- (IBAction)pressFacebook4:(id)sender;
-- (IBAction)pressFacebook5:(id)sender;
-- (IBAction)pressFacebook6:(id)sender;
-
-- (IBAction)pressTwitter1:(id)sender;
-- (IBAction)pressTwitter2:(id)sender;
-- (IBAction)pressTwitter3:(id)sender;
-- (IBAction)pressTwitter4:(id)sender;
-- (IBAction)pressTwitter5:(id)sender;
-- (IBAction)pressTwitter6:(id)sender;
-
 @end

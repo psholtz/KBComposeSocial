@@ -26,7 +26,11 @@
 
 #import "NSString+Support.h"
 
+#pragma mark - NSString Category (Support)
+
 @implementation NSString (Support)
+
+#pragma mark - Trim API
 
 - (NSString*)trim {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

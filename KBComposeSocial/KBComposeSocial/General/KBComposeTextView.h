@@ -24,6 +24,9 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
-@interface KBComposeTextView : UITextView
+#import <UIKit/UIKit.h>
 
+#pragma mark - Class Interface 
+
+@interface KBComposeTextView : UITextView
 @end

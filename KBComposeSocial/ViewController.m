@@ -30,10 +30,12 @@
 
 #import "UIImage+Support.h"
 
+#pragma mark - Class Extension
+
 @interface ViewController () <KBComposeViewControllerDelegate>
 
-#pragma mark -
-#pragma mark IBOutlets
+#pragma mark - Interface Builder Outlets
+
 @property (nonatomic) IBOutlet UIButton * buttonFacebook1;
 @property (nonatomic) IBOutlet UIButton * buttonFacebook2;
 @property (nonatomic) IBOutlet UIButton * buttonFacebook3;
@@ -62,6 +64,24 @@
 @property (nonatomic) IBOutlet UILabel * labelTwitter5;
 @property (nonatomic) IBOutlet UILabel * labelTwitter6;
 
+#pragma mark - Interface Builder Methods
+
+- (IBAction)pressFacebook1:(id)sender;
+- (IBAction)pressFacebook2:(id)sender;
+- (IBAction)pressFacebook3:(id)sender;
+- (IBAction)pressFacebook4:(id)sender;
+- (IBAction)pressFacebook5:(id)sender;
+- (IBAction)pressFacebook6:(id)sender;
+
+- (IBAction)pressTwitter1:(id)sender;
+- (IBAction)pressTwitter2:(id)sender;
+- (IBAction)pressTwitter3:(id)sender;
+- (IBAction)pressTwitter4:(id)sender;
+- (IBAction)pressTwitter5:(id)sender;
+- (IBAction)pressTwitter6:(id)sender;
+
+#pragma mark - Supporting Methods 
+
 - (NSString*)sampleText;
 - (UIImage*)sampleImage1;
 - (UIImage*)sampleImage2;
@@ -71,7 +91,11 @@
 
 @end
 
+#pragma mark - Class Implementation
+
 @implementation ViewController
+
+#pragma mark - View Lifecycle
 
 - (void)viewWillLayoutSubviews {
     if ( SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ) {
@@ -112,8 +136,8 @@
     view1.frame = CGRectMake(tmp.origin.x, tmp.origin.y + margin, tmp.size.width, tmp.size.height);
 }
 
-#pragma mark -
-#pragma mark IBAction Methods
+#pragma mark -  IBAction Methods
+
 //
 // FACEBOOK
 //
@@ -224,8 +248,8 @@
     [self displayViewController:comp];
 }
 
-#pragma mark -
-#pragma mark Internal Methods
+#pragma mark - Internal Methods
+
 - (NSString*)sampleText {
     return [NSString stringWithFormat:@"Test message: %f", [[NSDate date] timeIntervalSince1970]];
 }
@@ -259,8 +283,8 @@
     }
 }
 
-#pragma mark -
-#pragma mark Compose Delegate
+#pragma mark - KBComposeViewController Delegate
+
 - (void)composeViewControllerDidPressCancel:(id)sender {
     KBComposeViewController *controller = (KBComposeViewController*)sender;
     if ( [controller isServiceTypeFacebook] )

@@ -24,6 +24,8 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "KBComposeViewController.h"
 #import "KBComposeFacebookViewController.h"
 #import "KBComposeTwitterViewController.h"
@@ -33,13 +35,15 @@
 #import "UIImage+Support.h"
 #import "NSString+Support.h"
 
-#import <QuartzCore/QuartzCore.h>
-
 static const NSUInteger KB_TWEET_MAX_LENGTH    = 140;
 static const NSUInteger KB_TWEET_IMAGE_SIZE    = 23;
 static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 
+#pragma mark - Class Extension
+
 @interface KBComposeViewController () <UITextViewDelegate>
+
+#pragma mark - Methods
 
 // Internal Methods for UI
 - (void)updateAttachments;
@@ -49,10 +53,12 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 
 @end
 
+#pragma mark - Class Implementation
+
 @implementation KBComposeViewController
 
-#pragma mark -
-#pragma mark Accessors
+#pragma mark - Accessors
+
 - (NSString*)text {
     return _internalText;
 }
@@ -95,8 +101,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     return KB_TWEET_MAX_LENGTH - self.postLength;
 }
 
-#pragma mark -
-#pragma mark Constructors
+#pragma mark - Constructors
+
 + (id)composeViewControllerForServiceType:(KBServiceTypeConstant)serviceType {
     // Construct correct type
     KBComposeViewController * controller = nil;
@@ -111,10 +117,9 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     return controller;
 }
 
-#pragma mark -
-#pragma mark View Lifecycle
-- (void)viewDidLoad
-{
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // Show slight "flash" on startup
@@ -187,8 +192,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     view1.frame = CGRectMake(tmp.origin.x, tmp.origin.y + margin, tmp.size.width, tmp.size.height);
 }
 
-#pragma mark -
-#pragma mark Check Service Type
+#pragma mark - Check Service Type
+
 - (BOOL)isServiceTypeFacebook {
     return self.serviceType == KBServiceTypeFacebook;
 }
@@ -196,8 +201,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     return self.serviceType == KBServiceTypeTwitter;
 }
 
-#pragma mark -
-#pragma mark Composing Posts
+#pragma mark - Composing Posts
+
 - (BOOL)setInitialText:(NSString*)text {
     if ( !_editable ) return FALSE;
   
@@ -262,8 +267,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     return TRUE;
 }
 
-#pragma mark -
-#pragma mark IBAction Methods
+#pragma mark - IBAction Methods
+
 - (IBAction)pressPost:(id)sender {
     _internalText = [self.textView.text trim];
     
@@ -292,8 +297,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     }
 }
 
-#pragma mark -
-#pragma mark Internal Methods
+#pragma mark - Internal Methods
+
 - (void)updateFramesForOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Implement in subclasses
     CGFloat buttonHorizontalMargin = 8.0f, buttonTop = 0.0f;
@@ -464,8 +469,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     }
 }
 
-#pragma mark -
-#pragma mark UITextViewDelegate
+#pragma mark - UITextViewDelegate
+
 - (void)textViewDidChange:(UITextView *)textView {
     [self updateCountLabel];
 }

@@ -24,6 +24,8 @@
 //  Created by Paul Sholtz on 5/15/13.
 //
 
+#pragma mark - Hardware Detection
+
 //
 // Macros for hardware detection
 //
@@ -31,6 +33,8 @@
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_5 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
 #define IS_IPHONE_4 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 480.0f)
+
+#pragma mark - OS Detection
 
 //
 // Macros for detecting iOS version
@@ -40,6 +44,8 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#pragma mark - Color Macros
 
 //
 // Color Macros
@@ -52,6 +58,8 @@
 #define kbColorGray     [UIColor colorWithWhite:0.5f alpha:1.0f]
 
 #define KB_NULL_STRING  @""
+
+#pragma mark - Weak Memory Linking
 
 //
 // Macro for weak linking, in case we want to support 4.3 and before

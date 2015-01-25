@@ -26,7 +26,8 @@
 
 #import "KBComposeViewController.h"
 
-@interface KBComposeTwitterViewController : KBComposeViewController
+#pragma mark - Class Interface 
 
+@interface KBComposeTwitterViewController : KBComposeViewController
 @end
 

@@ -24,6 +24,9 @@
 //  Created by Paul Sholtz on 5/16/13.
 //
 
-@interface KBComposeSheetView : UIView
+#import <UIKit/UIKit.h>
 
+#pragma mark - Class Interface 
+
+@interface KBComposeSheetView : UIView
 @end
