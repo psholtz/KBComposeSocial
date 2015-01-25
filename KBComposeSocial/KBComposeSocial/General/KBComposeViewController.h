@@ -49,10 +49,10 @@
 @end
 
 // Types of Compose Controllers
-typedef enum {
+typedef NS_ENUM(NSInteger, KBServiceType) {
     KBServiceTypeFacebook,
     KBServiceTypeTwitter,
-} KBServiceTypeConstant;
+};
 
 #pragma mark - Class Interface
 
@@ -63,7 +63,7 @@ typedef enum {
     NSMutableArray  * _internalUrls;
     NSInteger         _attachmentsCount;
     
-    KBServiceTypeConstant _serviceType;
+    KBServiceType     _serviceType;
     
     BOOL _editable;
     
@@ -99,7 +99,7 @@ typedef enum {
 
 #pragma mark - Properties 
 
-@property (nonatomic, assign)  KBServiceTypeConstant serviceType;
+@property (nonatomic, assign)  KBServiceType serviceType;
 
 @property (nonatomic, KB_WEAK) id<KBComposeViewControllerDelegate> delegate;
 
@@ -117,7 +117,7 @@ typedef enum {
 //
 // Constructors
 //
-+ (id)composeViewControllerForServiceType:(KBServiceTypeConstant)serviceType;
++ (id)composeViewControllerForServiceType:(KBServiceType)serviceType;
 
 #pragma mark - Instance Methods
 //

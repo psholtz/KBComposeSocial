@@ -103,7 +103,7 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 
 #pragma mark - Constructors
 
-+ (id)composeViewControllerForServiceType:(KBServiceTypeConstant)serviceType {
++ (id)composeViewControllerForServiceType:(KBServiceType)serviceType {
     // Construct correct type
     KBComposeViewController * controller = nil;
     switch ( serviceType ) {
