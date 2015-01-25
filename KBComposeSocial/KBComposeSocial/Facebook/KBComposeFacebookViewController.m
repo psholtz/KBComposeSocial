@@ -29,11 +29,13 @@
 const static NSString *facebookPostButtonName      = @"KBComposeFacebookSendButton.png";
 const static NSString *facebookCancelButtonName    = @"KBComposeFacebookSendButton.png";
 const static NSString *facebookNavigationImageName = @"KBComposeFacebookNavigationBar.png";
-const static NSString *facebookLabelTitle          = @"Facebook";
 
 #pragma mark - Class Extension
 
 @interface KBComposeFacebookViewController ()
+
+@property (nonatomic, copy) NSString * facebookLabelTitle;
+
 @end
 
 #pragma mark - Class Implementation
@@ -60,11 +62,12 @@ const static NSString *facebookLabelTitle          = @"Facebook";
         _internalImages      = [[NSMutableArray alloc] init];
         _internalUrls        = [[NSMutableArray alloc] init];
         _editable            = YES;
+        _facebookLabelTitle  = [NSLocalizedString(@"Facebook", nil) copy];
         
-        _postButtonName      = (NSString*)facebookPostButtonName;
-        _cancelButtonName    = (NSString*)facebookCancelButtonName;
-        _navigationImageName = (NSString*)facebookNavigationImageName;
-        _labelTitle          = (NSString*)facebookLabelTitle;
+        _postButtonImageName   = (NSString*)facebookPostButtonName;
+        _cancelButtonImageName = (NSString*)facebookCancelButtonName;
+        _navigationImageName   = (NSString*)facebookNavigationImageName;
+        _labelTitle          = (NSString*)_facebookLabelTitle;
         _titleTextColor      = kbColorWhite;
         _titleShadowColor    = kbColorBlack;
         _postTextColor       = kbColorWhite;

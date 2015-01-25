@@ -26,14 +26,16 @@
 
 #import "KBComposeTwitterViewController.h"
 
-const static NSString * twitterPostButtonName      = @"KBComposeTwitterSendButton.png";
-const static NSString * twitterCancelButtonName    = @"KBComposeTwitterCancelButton.png";
-const static NSString * twitterNavigationImageName = @"KBComposeTwitterNavigationBar.png";
-const static NSString * twitterLabelTitle          = @"Tweet";
+const static NSString * twitterPostButtonImageName   = @"KBComposeTwitterSendButton.png";
+const static NSString * twitterCancelButtonImageName = @"KBComposeTwitterCancelButton.png";
+const static NSString * twitterNavigationImageName   = @"KBComposeTwitterNavigationBar.png";
 
 #pragma mark - Class Extension
 
 @interface KBComposeTwitterViewController ()
+
+@property (nonatomic, copy) NSString * twitterLabelTitle;
+
 @end
 
 #pragma mark - Class Implementation
@@ -60,11 +62,12 @@ const static NSString * twitterLabelTitle          = @"Tweet";
         _internalImages      = [[NSMutableArray alloc] init];
         _internalUrls        = [[NSMutableArray alloc] init];
         _editable            = YES;
+        _twitterLabelTitle   = [NSLocalizedString(@"Tweet", nil) copy];
         
-        _postButtonName      = (NSString*)twitterPostButtonName;
-        _cancelButtonName    = (NSString*)twitterCancelButtonName;
-        _navigationImageName = (NSString*)twitterNavigationImageName;
-        _labelTitle          = (NSString*)twitterLabelTitle;
+        _postButtonImageName   = (NSString*)twitterPostButtonImageName;
+        _cancelButtonImageName = (NSString*)twitterCancelButtonImageName;
+        _navigationImageName   = (NSString*)twitterNavigationImageName;
+        _labelTitle          = (NSString*)_twitterLabelTitle;
         _titleTextColor      = kbColorGray;
         _titleShadowColor    = kbColorWhite;
         _postTextColor       = kbColorWhite;

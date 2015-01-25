@@ -68,8 +68,8 @@ typedef NS_ENUM(NSInteger, KBServiceType) {
     BOOL _editable;
     
     // Non-IB Properties for the Interface (set in child classes)
-    NSString * _postButtonName;
-    NSString * _cancelButtonName;
+    NSString * _postButtonImageName;
+    NSString * _cancelButtonImageName;
     NSString * _navigationImageName;
     NSString * _labelTitle;
     UIColor  * _titleTextColor;

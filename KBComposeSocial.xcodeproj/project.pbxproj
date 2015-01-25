@@ -15,6 +15,7 @@
 		860F520C174C51E40059566C /* KBComposeTwitterSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520A174C51E40059566C /* KBComposeTwitterSendButton@2x.png */; };
 		860F520F174C52B90059566C /* KBComposeTwitterCancelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520D174C52B90059566C /* KBComposeTwitterCancelButton.png */; };
 		860F5210174C52B90059566C /* KBComposeTwitterCancelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860F520E174C52B90059566C /* KBComposeTwitterCancelButton@2x.png */; };
+		8636858C1A74E55F00584835 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8636858A1A74E55F00584835 /* Localizable.strings */; };
 		863BE7AB1745BB0000576FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AA1745BB0000576FB6 /* UIKit.framework */; };
 		863BE7AD1745BB0000576FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AC1745BB0000576FB6 /* Foundation.framework */; };
 		863BE7AF1745BB0000576FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863BE7AE1745BB0000576FB6 /* CoreGraphics.framework */; };
@@ -71,6 +72,7 @@
 		860F520A174C51E40059566C /* KBComposeTwitterSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeTwitterSendButton@2x.png"; sourceTree = "<group>"; };
 		860F520D174C52B90059566C /* KBComposeTwitterCancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KBComposeTwitterCancelButton.png; sourceTree = "<group>"; };
 		860F520E174C52B90059566C /* KBComposeTwitterCancelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KBComposeTwitterCancelButton@2x.png"; sourceTree = "<group>"; };
+		8636858B1A74E55F00584835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		863BE7A71745BB0000576FB6 /* KBComposeSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBComposeSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863BE7AA1745BB0000576FB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		863BE7AC1745BB0000576FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863685891A74E54000584835 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8636858A1A74E55F00584835 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
 		863BE79E1745BB0000576FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 		863BE7B11745BB0000576FB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				863685891A74E54000584835 /* en.lproj */,
 				86A31F621751AA750084C057 /* Icon-72.png */,
 				86A31F631751AA750084C057 /* Icon-72@2x.png */,
 				86A31F641751AA750084C057 /* Icon.png */,
@@ -389,6 +400,7 @@
 				8655956B1747159100E7F603 /* KBComposeURLAttachment.png in Resources */,
 				8655956C1747159100E7F603 /* KBComposeURLAttachment@2x.png in Resources */,
 				860F520B174C51E40059566C /* KBComposeTwitterSendButton.png in Resources */,
+				8636858C1A74E55F00584835 /* Localizable.strings in Resources */,
 				860F520C174C51E40059566C /* KBComposeTwitterSendButton@2x.png in Resources */,
 				860F520F174C52B90059566C /* KBComposeTwitterCancelButton.png in Resources */,
 				860F5210174C52B90059566C /* KBComposeTwitterCancelButton@2x.png in Resources */,
@@ -432,6 +444,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8636858A1A74E55F00584835 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8636858B1A74E55F00584835 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		863BE7B31745BB0000576FB6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

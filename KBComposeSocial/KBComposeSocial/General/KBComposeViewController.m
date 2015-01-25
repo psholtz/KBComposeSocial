@@ -142,10 +142,12 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     [self.navLabel setTextColor:_titleTextColor];
     [self.navLabel setShadowColor:_titleShadowColor];
     
+    [self.postButton setTitle:NSLocalizedString(@"Post", nil) forState:UIControlStateNormal];
     [self.postButton setTitleColor:_postTextColor forState:UIControlStateNormal];
     [self.postButton setTitleColor:kbColorWhite forState:UIControlStateHighlighted];
     [self.postButton setTitleShadowColor:_postShadowColor forState:UIControlStateNormal];
     [self.postButton setTitleShadowColor:kbColorBlack forState:UIControlStateHighlighted];
+    [self.cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
     [self.cancelButton setTitleColor:_cancelTextColor forState:UIControlStateNormal];
     [self.cancelButton setTitleColor:kbColorWhite forState:UIControlStateHighlighted];
     [self.cancelButton setTitleShadowColor:_cancelShadowColor forState:UIControlStateNormal];
@@ -275,7 +277,10 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 #if KB_GUARD_POSTING_NULL_STRING
     // Abort if we are guarding null strings
     if ( self.text.length == 0 ) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebook" message:@"Please enter a non-null string!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        NSString * lblAlertTitle = NSLocalizedString(@"Facebook", nil);
+        NSString * lblAlertMsg   = NSLocalizedString(@"Please enter a non-null string!", nil);
+        NSString * lblOK = NSLocalizedString(@"OK", nil);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:lblAlertTitle message:lblAlertMsg delegate:nil cancelButtonTitle:lblOK otherButtonTitles:nil];
         [alert show];
         self.textView.text = (NSString*)KB_NULL_STRING;
         return;
@@ -315,8 +320,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     BOOL statusBarHidden = [UIApplication sharedApplication].statusBarHidden;
     
     if IS_IPHONE {
-        postButtonImage = [[UIImage imageWithName:_postButtonName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
-        cancelButtonImage = [[UIImage imageWithName:_cancelButtonName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
+        postButtonImage = [[UIImage imageWithName:_postButtonImageName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
+        cancelButtonImage = [[UIImage imageWithName:_cancelButtonImageName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
         cardWidth = CGRectGetWidth(self.view.bounds) - 10.0f;
         if ( UIInterfaceOrientationIsPortrait(interfaceOrientation) ) {
             buttonTop = 7.0f; cardHeaderLineTop = _serviceType == KBServiceTypeFacebook ? 41.0f : 42.0f; cardHeaderLineWidth = 312.0f;
@@ -343,8 +348,8 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
         }
     }
     else if IS_IPAD {
-        postButtonImage = [[UIImage imageWithName:_postButtonName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
-        cancelButtonImage = [[UIImage imageWithName:_cancelButtonName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
+        postButtonImage = [[UIImage imageWithName:_postButtonImageName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
+        cancelButtonImage = [[UIImage imageWithName:_cancelButtonImageName] stretchableImageWithLeftCapWidth:4 topCapHeight:0];
         buttonTop = 7.0f; cardHeaderLineTop = _serviceType == KBServiceTypeFacebook ? 41.0f : 42.0f; cardHeaderLineWidth = 540.0f;
         
         if ( UIInterfaceOrientationIsPortrait(interfaceOrientation) ) {
