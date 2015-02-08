@@ -108,9 +108,9 @@ typedef NS_ENUM(NSInteger, KBServiceType) {
 @property (nonatomic, readonly) NSInteger remainingChars;
 
 // Data Items (to be passed on to social services)
-@property (nonatomic, copy, readonly)   NSString * text;
-@property (nonatomic, strong, readonly) NSArray  * images;
-@property (nonatomic, strong, readonly) NSArray  * urls;
+@property (nonatomic, copy, readonly) NSString * text;
+@property (nonatomic, copy, readonly) NSArray  * images;
+@property (nonatomic, copy, readonly) NSArray  * urls;
 @property (nonatomic, assign, readonly) NSInteger  attachmentsCount;
 
 #pragma mark - Class Methods
