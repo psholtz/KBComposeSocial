@@ -62,7 +62,7 @@ const static NSString * twitterNavigationImageName   = @"KBComposeTwitterNavigat
         _internalImages      = [[NSMutableArray alloc] init];
         _internalUrls        = [[NSMutableArray alloc] init];
         _editable            = YES;
-        _twitterLabelTitle   = [NSLocalizedString(@"Tweet", nil) copy];
+        _twitterLabelTitle   = [NSLocalizedStringFromTableInBundle(@"Tweet", nil, KB_MAIN_BUNDLE, nil) copy];
         
         _postButtonImageName   = (NSString*)twitterPostButtonImageName;
         _cancelButtonImageName = (NSString*)twitterCancelButtonImageName;

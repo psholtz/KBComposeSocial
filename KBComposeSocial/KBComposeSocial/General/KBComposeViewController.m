@@ -142,12 +142,12 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
     [self.navLabel setTextColor:_titleTextColor];
     [self.navLabel setShadowColor:_titleShadowColor];
     
-    [self.postButton setTitle:NSLocalizedString(@"Post", nil) forState:UIControlStateNormal];
+    [self.postButton setTitle:NSLocalizedStringFromTableInBundle(@"Post", nil, KB_MAIN_BUNDLE, nil) forState:UIControlStateNormal];
     [self.postButton setTitleColor:_postTextColor forState:UIControlStateNormal];
     [self.postButton setTitleColor:kbColorWhite forState:UIControlStateHighlighted];
     [self.postButton setTitleShadowColor:_postShadowColor forState:UIControlStateNormal];
     [self.postButton setTitleShadowColor:kbColorBlack forState:UIControlStateHighlighted];
-    [self.cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+    [self.cancelButton setTitle:NSLocalizedStringFromTableInBundle(@"Cancel", nil, KB_MAIN_BUNDLE, nil) forState:UIControlStateNormal];
     [self.cancelButton setTitleColor:_cancelTextColor forState:UIControlStateNormal];
     [self.cancelButton setTitleColor:kbColorWhite forState:UIControlStateHighlighted];
     [self.cancelButton setTitleShadowColor:_cancelShadowColor forState:UIControlStateNormal];
@@ -277,9 +277,9 @@ static const NSUInteger KB_TWEET_URL_BASE_SIZE = 18;
 #if KB_GUARD_POSTING_NULL_STRING
     // Abort if we are guarding null strings
     if ( self.text.length == 0 ) {
-        NSString * lblAlertTitle = NSLocalizedString(@"Facebook", nil);
-        NSString * lblAlertMsg   = NSLocalizedString(@"Please enter a non-null string!", nil);
-        NSString * lblOK = NSLocalizedString(@"OK", nil);
+        NSString * lblAlertTitle = NSLocalizedStringFromTableInBundle(@"Facebook", nil, KB_MAIN_BUNDLE, nil);
+        NSString * lblAlertMsg   = NSLocalizedStringFromTableInBundle(@"Please enter a non-null string!", nil, KB_MAIN_BUNDLE, nil);
+        NSString * lblOK = NSLocalizedStringFromTableInBundle(@"OK", nil, KB_MAIN_BUNDLE, nil);
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:lblAlertTitle message:lblAlertMsg delegate:nil cancelButtonTitle:lblOK otherButtonTitles:nil];
         [alert show];
         self.textView.text = (NSString*)KB_NULL_STRING;

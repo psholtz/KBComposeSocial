@@ -57,8 +57,6 @@
 #define kbColorBlack    [UIColor colorWithWhite:0.0f alpha:1.0f]
 #define kbColorGray     [UIColor colorWithWhite:0.5f alpha:1.0f]
 
-#define KB_NULL_STRING  @""
-
 #pragma mark - Weak Memory Linking
 
 //
@@ -73,3 +71,11 @@
 #define KB_WEAK assign
 #endif
 #endif
+
+//
+// Miscellaneous
+//
+#pragma mark - Miscellaneous
+
+#define KB_NULL_STRING  @""
+#define KB_MAIN_BUNDLE  [NSBundle mainBundle]

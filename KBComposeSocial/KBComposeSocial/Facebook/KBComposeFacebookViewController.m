@@ -62,7 +62,7 @@ const static NSString *facebookNavigationImageName = @"KBComposeFacebookNavigati
         _internalImages      = [[NSMutableArray alloc] init];
         _internalUrls        = [[NSMutableArray alloc] init];
         _editable            = YES;
-        _facebookLabelTitle  = [NSLocalizedString(@"Facebook", nil) copy];
+        _facebookLabelTitle  = [NSLocalizedStringFromTableInBundle(@"Facebook", nil, KB_MAIN_BUNDLE, nil) copy];
         
         _postButtonImageName   = (NSString*)facebookPostButtonName;
         _cancelButtonImageName = (NSString*)facebookCancelButtonName;
