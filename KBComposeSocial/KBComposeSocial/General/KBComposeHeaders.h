@@ -78,4 +78,4 @@
 #pragma mark - Miscellaneous
 
 #define KB_NULL_STRING  @""
-#define KB_MAIN_BUNDLE  [NSBundle mainBundle]
+#define KB_MAIN_BUNDLE  [NSBundle bundleForClass:[KBComposeViewController class]]
