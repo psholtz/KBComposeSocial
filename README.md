@@ -86,8 +86,15 @@ This code is distributed under the terms and conditions of the MIT license.
 Change Log
 ---------- 
 
+<b>Version 1.1</b> @ February 11, 2015.
+
+<ul>
+<li>Support for iOS7, iOS8.</li>
+<li>Other minor updates.</li>
+</ul>
+
 <b>Version 1.0</b> @ January 18, 2014.
 
 <ul>
-<li>Initial Release</li>
+<li>Initial Release.</li>
 </ul>
